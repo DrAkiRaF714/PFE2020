@@ -1,0 +1,23 @@
+RGB COOLORS :
+
+Black Olive 383D3B 
+
+	56, 61, 59
+
+Tumbleweed D8A48F
+
+	216, 164, 143
+
+Sugar Plum 914D76
+
+	145, 77, 118
+
+Blue Munsell 3B8EA5
+
+	59, 142, 165
+
+Opal A3C4BC 
+	
+	163, 196, 188
+
+	
