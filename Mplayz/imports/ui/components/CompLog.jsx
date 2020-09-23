@@ -1,22 +1,21 @@
 import React from "react";
-import { GoogleLogin } from 'react-google-login';
+import { Meteor } from 'meteor/meteor';
 
 const CompLog = () => {
-    const responseGoogle = (response) => {
-        console.log(response);
-      }
-    return(
-    <div> Hello je suis le comp log
-    <GoogleLogin
-    clientId="394834453579-aqcvsrecefm0pm69l6fifjr9a53hok9l.apps.googleusercontent.com"
-    buttonText="Login"
-    onSuccess={responseGoogle}
-    onFailure={responseGoogle}
-    isSignedIn={true}
-  />
-    </div>
-  
-    )
+  const handleClick = (e) => {
+    Meteor.loginWithGoogle({
+      requestPermissions: ['email'],
+    }, (error) => {
+      if (error) {
+       toast.error(error.reason);
+      } else
+        toast.success('Bienvenue !');
+    });
+  };
+
+  return(
+    <button onClick={handleClick}>SIGNIN</button>
+  );
 }
 
 export default CompLog;
