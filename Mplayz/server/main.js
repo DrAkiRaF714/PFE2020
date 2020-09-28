@@ -6,8 +6,9 @@ ServiceConfiguration.configurations.upsert(
     {
         $set: {
             loginStyle: "popup",
-            clientId: "130232473888-vhl9v85v2pmik9iblo0vk5igvpkjn9r3.apps.googleusercontent.com",
-            secret: "-uLIiCveZYY_7rVc8x1uUV2l"
+            clientId: "394834453579-aqcvsrecefm0pm69l6fifjr9a53hok9l.apps.googleusercontent.com",
+            // clientId: Meteor.settings.private.oAuth.google.staging.clientId,
+            secret: "Cq5-Y2WIuzLdE2IM6woLBSro"
         }
     }
 );
