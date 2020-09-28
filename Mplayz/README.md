@@ -33,3 +33,9 @@ npm install react-google-login
 Cq5-Y2WIuzLdE2IM6woLBSro
 
 api key : AIzaSyCYvu1RQV5KYk1U9gn7-Mk-DMlY_UUnj5U
+
+id client : 394834453579-djsbka7kcv7mepn5upamt3rdillhopv2.apps.googleusercontent.com
+
+code secret : 7KjOxzHw16WPwlURTS15VJKE
+
+https://console.developers.google.com/projectselector2/apis/dashboard?pli=1&supportedpurview=project
