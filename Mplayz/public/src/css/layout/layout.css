@@ -1,0 +1,58 @@
+@import url("./normalize.css");
+
+/* General */
+
+body,
+html {
+  width: 100%;
+}
+
+#react-target,
+.app {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  margin-top: 80px;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+ul {
+  display: inline-flex;
+  flex-direction: row;
+  width: 60vw;
+  padding: 1rem;
+  list-style: none;
+  border: 1px solid black;
+}
+
+li {
+  margin: 0 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+/* Main */
+
+/* Footer */
