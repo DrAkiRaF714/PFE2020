@@ -1,6 +1,6 @@
 import React from "react";
 import { Meteor } from 'meteor/meteor';
-
+import { toast } from 'react-toastify';
 
 const CompLog = () => {
   const handleClick = (e) => {
@@ -16,7 +16,7 @@ const CompLog = () => {
 
   return (
     <div>
-      {/* <button onClick={handleClick}>SIGNIN</button> */}
+      <button onClick={handleClick}>SIGNIN</button>
     </div>
       
   );
