@@ -1,5 +1,6 @@
 import React from 'react';
 import CompLog from '/imports/ui/components/CompLog';
+import '../../../../public/src/css/layout/header.css';
 
 const Header = () => {
     return (
@@ -10,9 +11,9 @@ const Header = () => {
             <ul>
                 <li>Upload</li>
                 <li>Info</li>
-                <li>Contact</li>
-                <li><CompLog/></li>
+                <li>Contact</li>               
             </ul>
+            <CompLog/>
         </header>
     )
 }
