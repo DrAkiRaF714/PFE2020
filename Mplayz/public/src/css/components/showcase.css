@@ -1,0 +1,9 @@
+.showcase {
+    width: auto;
+    height: 50vh;
+    margin: 1rem;
+    background-color: var(--sugar-plum);
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}

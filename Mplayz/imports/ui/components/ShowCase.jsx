@@ -1,9 +1,12 @@
 import React from "react";
+import '../../../public/src/css/components/showcase.css';
 
-const CompLog = () => {
+const Showcase = () => {
     return(
-    <div> Hello je suis le comp log </div>
+        <div className="showcase">
+           <p>Vitrine</p>
+        </div>
     )
 }
 
-export default CompLog;
+export default Showcase;
