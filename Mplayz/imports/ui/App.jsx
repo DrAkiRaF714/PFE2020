@@ -1,19 +1,33 @@
 import React from 'react';
-import Layout from './components/layout/_layout';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+
+import Home from './components/Home';
+import AccountProfil from  './components/AccountProfil'
+
 import 'react-toastify/dist/ReactToastify.css';
+import '../../public/src/css/layout/normalize.css';
+import '../../public/src/css/layout/header.css';
+import '../../public/src/css/layout/layout.css';
 
-// components
-import Showcase from './components/ShowCase';
+import '../../public/src/css/components/showcase.css';
+import '../../public/src/css/components/accept.css';
+import '../../public/src/css/components/account-profil.css';
 
+import '../../public/src/css/utilities/_colors.css';
+import '../../public/src/css/utilities/_fonts.css';
 
 const App = () => {
   return(
-    <Layout>
+    <>
       <ToastContainer />
-      <h1>Welcome to Mplayz!</h1> 
-      <Showcase />
-    </Layout>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route  path="/accountprofil" component={AccountProfil} />
+        </Switch>
+      </Router>
+    </>
   );
 };
 

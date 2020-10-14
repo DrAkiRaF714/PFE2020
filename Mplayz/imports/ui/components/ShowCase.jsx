@@ -1,5 +1,4 @@
 import React from "react";
-import '../../../public/src/css/components/showcase.css';
 
 const Showcase = () => {
     return(

@@ -1,8 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CompLog from '/imports/ui/components/CompLog';
-
-import '../../../../public/src/css/layout/header.css';
-import '../../../../public/src/css/utilities/_fonts.css';
 
 const Header = () => {
     return (
@@ -13,8 +11,9 @@ const Header = () => {
                 <ul>
                     <li>Upload</li>
                     <li>Info</li>
+                    <li><Link to="/accountprofil">Account</Link></li>
                     <li>Contact</li>
-                    <li><CompLog/></li>        
+                    <li><CompLog/></li>
                 </ul>
             </nav>
         </header>

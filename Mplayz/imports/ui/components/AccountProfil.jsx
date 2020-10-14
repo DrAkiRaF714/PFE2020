@@ -1,5 +1,4 @@
 import React from "react";
-import '../../../public/src/css/components/account-profil.css';
 
 const AccountPorfil = () => {
     return(

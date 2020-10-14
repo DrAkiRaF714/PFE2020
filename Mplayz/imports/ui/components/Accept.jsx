@@ -1,5 +1,4 @@
 import React from "react";
-import '../../../public/src/css/components/accept.css';
 
 const Accept = () => {
     return(
