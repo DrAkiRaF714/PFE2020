@@ -1,11 +1,11 @@
 import React from 'react';
 
+import '../../../../public/src/css/layout/footer.css';
+
 const Footer = () => {
     return(
         <footer>
-            Hello je suis Valentin.
         </footer>
     )
 }
-
 export default Footer;

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "OpenDyslexic-Bold";
+    src: url("../../fonts/OpenDyslexic-Bold.otf") format("otf");
+
+
+    font-family: "OpenDyslexic-BoldItalic";
+    src: url("../../fonts/OpenDyslexic-BoldItalic.otf") format("otf");
+
+
+    font-family: "OpenDyslexic-Italic";
+    src: url("../../fonts/OpenDyslexic-Italic.otf") format("otf");
+
+
+    font-family: "OpenDyslexic-Regular";
+    src: url("../../fonts/OpenDyslexic-Regular.otf") format("otf");
+}
+
+li{
+    font-family: OpenDyslexic-Bold;
+
+}

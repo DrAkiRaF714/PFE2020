@@ -5,17 +5,20 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: var(--black-olive);
+  font-family: OpenDyslexic-Bold;
 }
 
 #react-target,
 .app {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .app {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Main */
