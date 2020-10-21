@@ -24,7 +24,8 @@ html {
 /* Main */
 main {
   flex: 1;
-  margin-top: 80px;
+  margin-top: 10vh;
   background-color: var(--sugar-plum-light);
+  text-align: center;
 }
 /* Footer */
