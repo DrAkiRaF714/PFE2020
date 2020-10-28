@@ -5,20 +5,34 @@ import CompLog from '/imports/ui/components/CompLog';
 const Header = () => {
 
     const hiddenMenu = () => {
-        document.querySelector('.nav-items').classList.toggle('hidden');
+    //    document.querySelector('.nav-items').classList.toggle('hidden');
+
+        let hiddenStairs = document.querySelectorAll('.hidden-stairs');
+
+        Array.from(hiddenStairs).forEach(element => {
+
+            element.classList.toggle('hidden');
+
+
+        });
+       
+       
+
     }
 
     return (
         <header>
             {/* Menu slidebar */}
-            <img onClick={hiddenMenu} className="logo" src="/src/images/LogoPlayzFini.png"  alt="Mplayz" />
+            <div className="container-banner">
+            <img onClick={hiddenMenu} className="logo" src="/src/images/LogoPlayzFini.png"  alt="Mplayz" />  
+            <span className="upload"><Link to="/upload">Upload</Link></span>
+            </div>
             <nav className="menu">
-                <ul onClick={hiddenMenu} className="nav-items hidden">
-                    <li><Link to="/upload">Upload</Link></li>
-                    <li>Info</li>
-                    <li><Link to="/accountprofil">Account</Link></li>
-                    <li>Contact</li>
-                    <li><CompLog/></li>
+                <ul onClick={hiddenMenu} >
+                    <li className="hidden-stairs hidden">Info</li>
+                    <li className="hidden-stairs hidden"><Link to="/accountprofil">Account</Link></li>
+                    <li className="hidden-stairs hidden">Contact</li>
+                    <li className="hidden-stairs hidden"><CompLog/></li>
                 </ul>
             </nav>
         </header>
