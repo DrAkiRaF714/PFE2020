@@ -18,11 +18,14 @@ import '../../public/src/css/components/account-profil.css';
 
 import '../../public/src/css/utilities/_colors.css';
 import '../../public/src/css/utilities/_fonts.css';
+import Contact from './components/Contact';
+import ContactPopup from './components/ContactPopup';
 
 const App = () => {
   return(
     <>
       <ToastContainer />
+      <ContactPopup />
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
