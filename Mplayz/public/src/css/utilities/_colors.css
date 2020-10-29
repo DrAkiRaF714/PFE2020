@@ -1,5 +1,6 @@
 :root {
     --black-olive: rgb(56, 61, 59);
+    --black-olive-smoke: rgba(56, 61, 59, 0.7);
     --tumbleweed: rgb(216, 164, 143);
     --sugar-plum: rgb(145, 77, 118);
     --sugar-plum-light: rgba(145, 77, 118, 0.80);

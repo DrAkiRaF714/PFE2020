@@ -5,22 +5,15 @@ import CompLog from '/imports/ui/components/CompLog';
 const Header = () => {
 
     const hiddenMenu = () => {
-    //    document.querySelector('.nav-items').classList.toggle('hidden');
-
-        let hiddenStairs = document.querySelectorAll('.hidden-stairs');
-
+        const hiddenStairs = document.querySelectorAll('.hidden-stairs');
         Array.from(hiddenStairs).forEach(element => {
-
-            element.classList.toggle('hidden');
-    
+            element.classList.toggle('hidden');    
         });
     }
 
     const pullContact = () => {
-
-        let viewContact = document.querySelector('hidden-contact-popup');
-        
-        viewContact.display('block');
+        const viewContact = document.querySelector('.hidden-contact-popup');        
+        viewContact.classList.remove('hidden-contact-popup');
     }
 
     return (
