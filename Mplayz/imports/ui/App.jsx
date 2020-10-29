@@ -18,7 +18,6 @@ import '../../public/src/css/components/account-profil.css';
 
 import '../../public/src/css/utilities/_colors.css';
 import '../../public/src/css/utilities/_fonts.css';
-import Contact from './components/Contact';
 import ContactPopup from './components/ContactPopup';
 
 const App = () => {
