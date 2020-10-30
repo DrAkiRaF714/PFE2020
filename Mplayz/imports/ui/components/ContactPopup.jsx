@@ -10,8 +10,8 @@ const ContactPopup = () => {
 
     return(
         <div className="container-popup hidden-contact-popup">
-            <div className="contact-popup">
-                <img onClick={closePopup} className="close-popup" src="../../" />
+            <div className="contact-popup box-shadow-windows native-radius">
+                <img onClick={closePopup} className="close-popup box-shadow-windows" src="../../src/images/icons/close.jpg" />
                 <Contact />
             </div>
         </div>

@@ -17,7 +17,7 @@ const Header = () => {
     }
 
     return (
-        <header>
+        <header className='box-shadow-windows'>
             {/* Menu slidebar */}
             <div className="container-banner">
                 <img onClick={hiddenMenu} className="logo" src="/src/images/LogoPlayzFini.png"  alt="Mplayz" />  

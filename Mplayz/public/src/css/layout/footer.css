@@ -3,6 +3,5 @@
 footer {
     height: 10vh;
     width: 100%;
-    border: 1px solid black;
     background-color: var(--black-olive);
 }
