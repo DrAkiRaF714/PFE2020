@@ -14,7 +14,6 @@ import '../../public/src/css/layout/layout.css';
 
 import '../../public/src/css/components/showcase.css';
 import '../../public/src/css/components/accept.css';
-import '../../public/src/css/components/account-profil.css';
 
 import '../../public/src/css/utilities/_colors.css';
 import '../../public/src/css/utilities/_fonts.css';

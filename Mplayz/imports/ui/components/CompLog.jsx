@@ -14,6 +14,19 @@ const CompLog = () => {
     });
   };
 
+  
+  // const connectionLink = useMemo(() => {
+  //   if (connected) {
+  //     return (
+  //       <Button onClick={logout}>Déconnexion</Button>
+  //     );
+  //   }
+  //   return (
+  //     <Button to="/signin">Se connnecter</Button>
+  //   );
+  // }, [connected, logout]);
+
+  
   return (
     <div>
       <button onClick={handleClick}>SIGNIN</button>

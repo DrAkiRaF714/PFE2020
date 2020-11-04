@@ -18,21 +18,14 @@
 
 .contact-popup {
     position: relative;
-    width: 70vw;
+    width: 80vw;
     background-color: var(--black-olive); 
     display: grid;
     place-items: center;
 }
 
-.contact-popup form {
-    display: flex;
-    flex-direction: column; 
-}
 
-.contact-popup form input {
-    margin: 1rem 0;
-    padding: 0.2 rem;
-}
+
 
 .close-popup {
     position: absolute;
