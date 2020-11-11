@@ -4,17 +4,17 @@ import { toast } from 'react-toastify';
 
 const CompLog = () => {
   const handleClick = (e) => {
-    Meteor.loginWithGoogle({
+  Meteor.loginWithGoogle({
       requestPermissions: ['email'],
     }, (error) => {
       if (error) {
         toast.error(error.reason);
       } else
         toast.success('Bienvenue !');
+        console.log(Meteor.users.find());
     });
   };
 
-  
   // const connectionLink = useMemo(() => {
   //   if (connected) {
   //     return (

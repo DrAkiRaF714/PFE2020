@@ -1,0 +1,44 @@
+.button-green {
+    background-color: var(--button-green);
+    border-radius: 1px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+
+}
+
+.button-border-tumble {
+    border: 0.5rem solid var(--tumbleweed);
+    padding: 1px;
+    height: 8rem;
+    width:  25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-border-tumble span{
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 100%;
+    width: 100%;
+    line-height: 6.5rem;
+}
+
+img.edit{
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+

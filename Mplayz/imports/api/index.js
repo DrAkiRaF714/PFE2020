@@ -12,10 +12,7 @@ const UserSchema = new SimpleSchema({
   email: {
     type: String,
   },
-  familyName: {
-    type: String,
-  },
-  givenName: {
+  userName: {
     type: String,
   },
   googleId: {
@@ -26,6 +23,6 @@ const UserSchema = new SimpleSchema({
   },
 });
 
-JokesCollection.attachSchema(JokeSchema);
+UsersCollection.attachSchema(UserSchema);
 
-export default JokesCollection;
+export default UsersCollection;
