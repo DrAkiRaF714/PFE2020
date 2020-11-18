@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import AccountProfil from  './components/pages/AccountProfil'
 import SelectMultipost from  './components/pages/SelectMultipost'
 import StudioProfil from './components/pages/StudioProfil';
+import ContactPopup from './components/ContactPopup';
 
 import 'react-toastify/dist/ReactToastify.css';
 import '../../public/src/css/layout/normalize.css';
@@ -17,7 +18,7 @@ import '../../public/src/css/components/accept.css';
 
 import '../../public/src/css/utilities/_colors.css';
 import '../../public/src/css/utilities/_fonts.css';
-import ContactPopup from './components/ContactPopup';
+
 
 const App = () => {
   return(

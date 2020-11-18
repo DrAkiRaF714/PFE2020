@@ -14,7 +14,7 @@ const Header = () => {
     const pullContact = () => {
         const viewContact = document.querySelector('.hidden-contact-popup');        
         viewContact.classList.remove('hidden-contact-popup');
-    }
+    } 
 
     return (
         <header className='box-shadow-windows'>

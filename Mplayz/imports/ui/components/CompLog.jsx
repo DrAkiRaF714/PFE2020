@@ -1,8 +1,12 @@
-import React from "react";
 import { Meteor } from 'meteor/meteor';
+import { useTracker } from 'meteor/react-meteor-data';
+import React, {
+  useState, useMemo, useCallback, useEffect,
+} from 'react';
 import { toast } from 'react-toastify';
 
 const CompLog = () => {
+  
   const handleClick = (e) => {
   Meteor.loginWithGoogle({
       requestPermissions: ['email'],
@@ -15,6 +19,12 @@ const CompLog = () => {
     });
   };
 
+  // const connected = useTracker(() => Meteor.userId(), []);
+
+  // const logout = useCallback(() => {
+  //   Meteor.logout();
+  // }, []);
+
   // const connectionLink = useMemo(() => {
   //   if (connected) {
   //     return (
@@ -25,13 +35,12 @@ const CompLog = () => {
   //     <Button to="/signin">Se connnecter</Button>
   //   );
   // }, [connected, logout]);
-
   
   return (
     <div>
       <button onClick={handleClick}>SIGNIN</button>
     </div>
-      
+      // {connectionLink}
   );
 }
 
