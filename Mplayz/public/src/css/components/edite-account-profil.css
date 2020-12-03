@@ -3,3 +3,29 @@ h1{
     margin: 0.67em 0;
 }
 
+.container-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    color: white;
+    background-color: var(--black-olive-smoke);
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+}
+
+/* .contact-popup{} */
+.hidden-edite-account-profil-popup {
+    display: none !important;
+}
+
+.edite-account-popup {
+    position: relative;
+    width: 80vw;
+    background-color: var(--black-olive);
+    display: grid;
+    place-items: center;
+}
+

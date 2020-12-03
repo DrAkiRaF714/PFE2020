@@ -5,27 +5,31 @@ import SimpleSchema from 'simpl-schema';
 const UserSchema = new SimpleSchema({
   username: { 
     type: String,
+    defaultValue: "NonName",
   },
   services: { 
     type: Object,
     blackbox: true 
   },
-  emails: { 
+  email: { 
     type: Array, 
     optional: true 
   },
-  "emails.$": {
+  "email.$": {
     type: Object,
     optional: true,
     blackbox: true 
   },
-  coloreyes:{
-    type: String,
-    optional: true
+  picture: { 
+    type: Array, 
+    optional: true 
+  },
+  "picture.$": {
+    type: Object,
+    optional: true,
+    blackbox: true 
   },
   createdAt: Date,
 });
 
-
 Meteor.users.attachSchema(UserSchema);
-

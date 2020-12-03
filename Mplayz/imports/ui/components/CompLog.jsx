@@ -13,34 +13,34 @@ const CompLog = () => {
     }, (error) => {
       if (error) {
         toast.error(error.reason);
+        console.log(error.reason);
       } else
         toast.success('Bienvenue !');
         console.log(Meteor.users.find());
     });
   };
 
-  // const connected = useTracker(() => Meteor.userId(), []);
+  const connected = useTracker(() => Meteor.userId(), []);
 
-  // const logout = useCallback(() => {
-  //   Meteor.logout();
-  // }, []);
+  const logout = useCallback(() => {
+    Meteor.logout();
+  }, []);
 
-  // const connectionLink = useMemo(() => {
-  //   if (connected) {
-  //     return (
-  //       <Button onClick={logout}>Déconnexion</Button>
-  //     );
-  //   }
-  //   return (
-  //     <Button to="/signin">Se connnecter</Button>
-  //   );
-  // }, [connected, logout]);
+  const connectionLink = useMemo(() => {
+    if (connected) {
+      return (
+        <button onClick={logout}>Déconnexion</button>
+      );
+    }
+    return (
+      <button onClick={handleClick}>SIGNIN</button>
+    );
+  }, [connected, logout]);
   
   return (
-    <div>
-      <button onClick={handleClick}>SIGNIN</button>
-    </div>
-      // {connectionLink}
+    <>
+      {connectionLink}
+    </>
   );
 }
 

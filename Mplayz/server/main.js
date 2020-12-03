@@ -1,6 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import '/imports/api/users';
 import '/imports/api/users/publication';
+import '/imports/api/users/methodes';
 import { ServiceConfiguration } from 'meteor/service-configuration';
 
 ServiceConfiguration.configurations.upsert(
