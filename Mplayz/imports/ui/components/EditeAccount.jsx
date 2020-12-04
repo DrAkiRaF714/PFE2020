@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import React, { useState, useCallback, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import '../../../public/src/css/components/edite-account-profil.css';
+import '../../../public/src/css/utilities/_icons.css';
 
 
 const EditeAccount = ({ user }) => {
@@ -35,6 +36,7 @@ const EditeAccount = ({ user }) => {
                 toast.error(error.reason);
             } else {
                 toast.success('Changement de nom avec succés');
+                closePopup();
 
             }
         });
@@ -52,37 +54,40 @@ const EditeAccount = ({ user }) => {
             <div className="edite-account-popup box-shadow-windows native-radius">
                 <img onClick={closePopup} className="close-popup box-shadow-windows" src="../../src/images/icons/close.jpg" />
                 <h1 className="settings-profil">Parametre de compte</h1>
-                <form onSubmit={handleSubmit}>
+                <form id="param-compte" onSubmit={handleSubmit}>
                     <label htmlFor="name">Nom</label>
                     <input type="text" name="userName" value={userName}
                         onChange={handleChange} id="settings-name" />
                     <div className="container-settings-links">
+                        <h2>Gérer vos services et comptes connectés</h2>
                         <div className="line-settings-links">
-                            <img src="" alt="twitch" />
+                            <img className="icons-social-scale"  src="../../src/images/icons/Twitch-violet.svg" alt="twitch" />
                             <div className="settings-links-account">
-                                <span className="text-links-accounts"></span>
-                                <img className="icons-links" src="" alt="icons-links" />
+                                <span className="text-links-accounts">Se connecter</span>
+                                <img className="icons-links" src="../../src/images/icons/link.svg" alt="icons-links" />
                             </div>
                         </div>
                         <div className="line-settings-links">
-                            <img src="" alt="youtube" />
+                            <img className="icons-social-scale"  src="../../src/images/icons/youtube.svg" alt="youtube" />
                             <div className="settings-links-account">
-                                <span className="text-links-accounts"></span>
-                                <img className="icons-links" src="" alt="icons-links" />
+                                <span className="text-links-accounts">Se connecter</span>
+                                <img className="icons-links" src="../../src/images/icons/link.svg" alt="icons-links" />
                             </div>
                         </div>
                         <div className="line-settings-links">
-                            <img src="" alt="twitter" />
+                            <img className="icons-social-scale"  src="../../src/images/icons/twitter.svg" alt="twitter" />
                             <div className="settings-links-account">
-                                <span className="text-links-accounts"></span>
-                                <img className="icons-links" src="" alt="icons-links" />
+                                <span className="text-links-accounts">Se connecter</span>
+                                <img className="icons-links" src="../../src/images/icons/link.svg" alt="icons-links" />
                             </div>
                         </div>
                     </div>
-                    <button className="submit-profil-modif button-green button-border-tumble" type="submit">
-                        <span className="button">Editer</span>
-                        <img className="edit" src="../../src/images/icons/edit.svg" alt="" />
-                    </button>
+                    <div className="container-button-edit-popup">
+                        <button className="submit-profil-modif button-green button-border-tumble" type="submit">
+                            <span className="button">Editer</span>
+                            <img className="edit" src="../../src/images/icons/edit.svg" alt="" />
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>

@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import Layout from '../layout/_layout';
+import { useTracker } from 'meteor/react-meteor-data';
+import { toast } from 'react-toastify';
 import '../../../../public/src/css/pages/selectMultipost.css';
 
-const SelectMultipost = () => {
+const SelectMultipost = ({history}) => {
+
+    const userId =  useTracker(() => Meteor.userId(), []);
+    useEffect(() => {
+        if (!userId) history.push('/')
+        toast.error('Vous n\'êtes pas connecté');
+    }, [userId]);
 
     selectionIcones = (e) => {
         e.target.classList.toggle('border-icones');
     }
 
+  
     return (
         <Layout>
             <h1>Choisissez vos plateformes d'upload</h1>

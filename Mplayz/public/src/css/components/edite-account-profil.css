@@ -15,11 +15,27 @@ h1{
     display: grid;
     place-items: center;
 }
-
+#param-compte{
+    display: grid;
+    place-items: center;
+}
 /* .contact-popup{} */
 .hidden-edite-account-profil-popup {
     display: none !important;
 }
+.text-links-accounts{
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+.container-settings-links{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 .edite-account-popup {
     position: relative;
@@ -28,4 +44,30 @@ h1{
     display: grid;
     place-items: center;
 }
+
+.line-settings-links{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80%;
+    
+}
+.settings-links-account{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.container-button-edit-popup{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
 

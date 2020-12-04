@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
+import { toast } from 'react-toastify';
 import Layout from '../layout/_layout';
 import EditeAccount from '../EditeAccount';
 import '../../../../public/src/css/pages/account-profil.css';
@@ -8,7 +9,7 @@ import '../../../../public/src/css/utilities/_button.css';
 
 
 
-const AccountPorfil = () => {
+const AccountPorfil = ({history}) => {
 
   const [user, setuser] = useState({
     "services": {
@@ -20,6 +21,12 @@ const AccountPorfil = () => {
 
   });
 
+  const userId =  useTracker(() => Meteor.userId(), []);
+  useEffect(() => {
+      if (!userId) history.push('/')
+      toast.error('Vous n\'êtes pas connecté');
+  }, [userId]);
+ 
 
   const [ready, userPublication] = useTracker(() => {
     const publication = Meteor.subscribe("user");
@@ -52,7 +59,7 @@ const AccountPorfil = () => {
     <Layout>
       <div className="container-profil">
         <div className='fiche-profil'>
-          <img className='profil-img' src="../../src/images/catProfil.jpg" alt="" id="profil" />
+          <img className='profil-img' src={user.services.google.picture} alt="" id="profil" />
           <div className="container-profil-ligne">
             {/* demandé le mail de l'utilisateur */}
             <div id="your-account-gmail" className="data-client">{user.services.google.email}</div>
@@ -63,7 +70,7 @@ const AccountPorfil = () => {
           </div>
           <div className="container-links-accounts">
             <div className="img-links">
-              <img onClick={selectionIcones} src="../../src/images/social/twitch.svg" aria-label=""></img>
+              <img onClick={selectionIcones} src="../../src/images/icons/Twitch-violet.svg" aria-label=""></img>
               <img onClick={selectionIcones} src="../../src/images/social/youtube.svg" aria-label=""></img>
               <img onClick={selectionIcones} src="../../src/images/social/twitter.svg" aria-label=""></img>
             </div>
