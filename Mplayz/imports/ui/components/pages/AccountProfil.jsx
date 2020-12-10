@@ -23,8 +23,10 @@ const AccountPorfil = ({history}) => {
 
   const userId =  useTracker(() => Meteor.userId(), []);
   useEffect(() => {
-      if (!userId) history.push('/')
+      if (!userId) {
+      history.push('/')
       toast.error('Vous n\'êtes pas connecté');
+    }
   }, [userId]);
  
 
@@ -40,7 +42,6 @@ const AccountPorfil = ({history}) => {
   useEffect(() => {
     if (ready) {
       setuser(userPublication);
-      console.log(userPublication);
     }
   }, [ready, userPublication]);
 

@@ -13,10 +13,8 @@ const CompLog = () => {
     }, (error) => {
       if (error) {
         toast.error(error.reason);
-        console.log(error.reason);
       } else
         toast.success('Bienvenue !');
-        console.log(Meteor.users.find());
     });
   };
 
